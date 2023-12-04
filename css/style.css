@@ -1,0 +1,479 @@
+/* Main section *Start* */
+
+.main-section {
+    padding: 52.5px 0;
+
+    background-image: url(../img/main-section__bg.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.main-section>.container {
+    margin: 0 40px;
+}
+
+.main-section__wrapper {
+    max-width: 431px;
+}
+
+.text-h1 {
+    color: var(--aswearhelp-tilda-ws-1920-x-1080-default-black, #000);
+    font-family: Arial;
+    font-size: 49.219px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    /* 121.905% */
+}
+
+.main-section__discount {
+    font-family: Arial;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 155px;
+    background: var(--aswearhelp-tilda-ws-1920-x-1080-default-linear-fun-green-radical-red, linear-gradient(0deg, #FF6A28 0%, #FE2F57 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main-section__p {
+    color: var(--aswearhelp-tilda-ws-1920-x-1080-default-black, #000);
+    font-family: Arial;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+    /* 154.545% */
+}
+
+.primary-btn {
+    padding: 8px 60px;
+
+    min-width: none;
+    width: fit-content;
+    display: block;
+
+    color: var(--aswearhelp-tilda-ws-1920-x-1080-default-nero, #FFF);
+    text-align: center;
+
+    /* aswearhelp_tilda_ws__1920x1080_default/Arial/Bold 23.87 */
+    font-family: Arial;
+    font-size: 23.867px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40.3px;
+    /* 168.851% */
+
+    text-decoration: none;
+
+
+    border: none;
+    border-radius: 5px;
+    background: var(--aswearhelp-tilda-ws-1920-x-1080-default-linear-fun-green-radical-red, linear-gradient(0deg, #FF6A28 0%, #FE2F57 100%));
+
+    cursor: pointer;
+}
+
+.grid-wrapper {
+    width: fit-content;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.pros-item {
+    padding: 9px 0;
+    min-width: 180px;
+
+    border-radius: 40px;
+    background: var(--aswearhelp-tilda-ws-1920-x-1080-default-black-haze, #F1F2F2);
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--aswearhelp-tilda-ws-1024-x-1820-default-black, #000);
+    text-align: center;
+
+    /* aswearhelp_tilda_ws__1024x1820_default/Arial/Narrow 15 */
+    font-family: Arial;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23.25px;
+    /* 155% */
+}
+
+.main-section__pros:not(:last-child) {
+    margin-right: 17px;
+}
+
+.main-section .main-section__p {
+    margin-bottom: 18px;
+}
+
+.main-section .primary-btn {
+    margin-bottom: 27px;
+}
+
+/* Main section *Stop* */
+
+/* Assortment Section *Start* */
+
+.assortment-section {
+    padding: 135px 0;
+
+    background: var(--aswearhelp-tilda-ws-1920-x-1080-default-gallery, #EFEFEF);
+}
+
+.assortment-section>.container {
+    margin: 0 30px;
+}
+
+.section-h2 {
+    color: var(--aswearhelp-tilda-ws-1920-x-1080-default-black, #000);
+    text-align: center;
+
+    /* aswearhelp_tilda_ws__1920x1080_default/Arial/Bold 42 */
+    font-family: Arial;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 51.66px;
+    /* 123% */
+}
+
+.assortment-section__p {
+    margin-bottom: 91px;
+
+    color: var(--aswearhelp-tilda-ws-1920-x-1080-default-black, #000);
+    text-align: center;
+    font-family: Arial;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    /* 150% */
+}
+
+.carousel {
+    display: grid;
+    grid-template-columns: 40px 1fr 40px;
+
+    align-items: center;
+}
+
+.carousel__prev-btn,
+.carousel__next-btn {
+    width: 40px;
+    height: 40px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background: var(--aswearhelp-tilda-ws-1920-x-1080-default-coral-red, #FE3A4E);
+}
+
+.carousel__prev-btn>img {
+    transform: rotate(180deg);
+}
+
+.carousel-wrapper {
+    padding: 10px;
+    margin: 0 auto;
+    max-width: calc(70% - 90px);
+
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+.assortment-list {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.assortment-list__item {
+    flex: 0 0 260px;
+
+    background: var(--aswearhelp-tilda-ws-1920-x-1080-default-nero, #FFF);
+    border-radius: 8px;
+    overflow: hidden;
+
+    transition: .2s linear;
+}
+
+.assortment-list__item:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.assortment-list__item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.assortment-list__preview {
+    width: 100%;
+}
+
+.assortment-list__description {
+    padding: 18px 0;
+    margin: 0 20px;
+}
+
+.assortment-list__hint {
+    margin-bottom: 8px;
+    color: var(--aswearhelp-tilda-ws-1920-x-1080-default-deep-sea, #FF8562);
+
+    /* aswearhelp_tilda_ws__1920x1080_default/Arial/Bold 12 */
+    font-family: Arial;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.5px;
+}
+
+.assortment-list__title {
+    margin-bottom: 17px;
+    color: var(--aswearhelp-tilda-ws-1920-x-1080-default-black, #000);
+
+    /* aswearhelp_tilda_ws__1920x1080_default/Arial/Bold 16 */
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21.6px;
+    /* 135% */
+}
+
+.assortment-list__price {
+    margin-bottom: 8px;
+    padding: 11px 0;
+
+    width: 100px;
+
+    color: var(--aswearhelp-tilda-ws-1920-x-1080-default-nero, #FFF);
+    text-align: center;
+    font-family: Arial;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 13px;
+    /* 100% */
+
+    border-radius: 5px;
+    background: var(--aswearhelp-tilda-ws-1920-x-1080-default-linear-fun-green-radical-red, linear-gradient(0deg, #FF6A28 0%, #FE2F57 100%));
+}
+
+.assortment-list__link-btn {
+    display: block;
+
+    padding: 11px 0;
+    width: 150px;
+
+    color: var(--aswearhelp-tilda-ws-1920-x-1080-default-black, #000);
+    text-align: center;
+    font-family: Arial;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 13px;
+    text-decoration: none;
+    /* 100% */
+
+    border-radius: 5px;
+    border: 1px solid var(--aswearhelp-tilda-ws-1920-x-1080-default-black, #000);
+}
+
+/* Assortment Section *Stop* */
+
+/* Application Section *Start* */
+
+.application-section {}
+
+.application-section>.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.application-section__description {
+    padding: 20px;
+
+    background: var(--aswearhelp-tilda-ws-1024-x-1820-default-linear-fun-green-radical-red, linear-gradient(0deg, #FF6A28 0%, #FE2F57 100%));
+}
+
+.application-section .section-h2 {
+    text-align: left;
+}
+
+.application-section__h2 {
+    color: var(--aswearhelp-tilda-ws-1024-x-1820-default-nero, #FFF);
+}
+
+.application-section__count {
+    font-family: Arial;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 155px;
+    /* 155% */
+
+    background: var(--aswearhelp-tilda-ws-1024-x-1820-default-linear-big-stone-astronaut, linear-gradient(0deg, #141E30 0%, #28416F 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.application-section__p {
+    color: var(--aswearhelp-tilda-ws-1024-x-1820-default-nero, #FFF);
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    /* 156.25% */
+}
+
+.grid-wrapper {}
+
+.application-section__link-btn {}
+
+.application-section__preview {
+    width: 100%;
+    overflow: hidden;
+
+    max-height: 700px;
+}
+
+/* Application Section *Stop* */
+
+/* Brands Section *Start* */
+
+.brands-section>.container {
+    margin: 0 40px;
+}
+
+.brands-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.brands-list__item {
+    flex: 0 0 140px;
+}
+
+.brands-list__item>img {
+    width: 100%;
+}
+
+/* Brands Section *Stop* */
+
+/* Promocode section *Start* */
+
+.promocode-section {
+    padding: 105px 0;
+}
+
+.promocode-form {
+    margin: 0 auto;
+    padding: 57px 0 82px 0;
+    width: fit-content;
+
+    background-image: url(../img/promocode-bg.jpeg);
+    background-position: center center;
+}
+
+.promocode-form>.container {
+    margin: 0 77px;
+}
+
+.promocode-form__h2 {
+    margin-bottom: 16px;
+    color: var(--aswearhelp-tilda-ws-1024-x-1820-default-nero, #FFF);
+    text-align: center;
+
+    /* aswearhelp_tilda_ws__1024x1820_default/Arial/Bold 31.63 */
+    font-family: Arial;
+    font-size: 31.625px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 39.36px;
+    /* 124.458% */
+}
+
+.promocode-form__p {
+    margin-bottom: 30px;
+    color: var(--aswearhelp-tilda-ws-1024-x-1820-default-nero, #FFF);
+    text-align: center;
+
+    /* aswearhelp_tilda_ws__1024x1820_default/Arial/Narrow 14 */
+    font-family: Arial;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21.7px;
+    /* 155% */
+}
+
+.promocode-form__wrapper {
+
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 15px;
+}
+
+.input {
+    padding: 20px;
+
+    border: none;
+    border-radius: 4px;
+    background: var(--aswearhelp-tilda-ws-1024-x-1820-default-nero, #FFF);
+    outline: none;
+}
+
+/* Promocode section *Stop* */
+
+/* Question section *Start* */
+
+.question-section {
+    padding: 105px 0;
+}
+
+.question-section>.container {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.section-h2 {}
+
+.question-section__p {
+    color: #000000;
+    font-size: 24px;
+    font-family: 'Arial', Arial, sans-serif;
+    line-height: 37px;
+    font-weight: 400;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+}
+
+.question-section__wrapper {
+    display: flex;
+    align-items: flex-end;
+}
+
+.question-section__wrapper>img {
+    width: 50px;
+}
+
+.primary-btn {}
+
+/* Question section *Stop* */
