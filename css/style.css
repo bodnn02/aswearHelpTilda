@@ -477,3 +477,84 @@
 .primary-btn {}
 
 /* Question section *Stop* */
+
+/* Delivery section *Start* */
+
+.delivery-section {
+    padding: 150px 0;
+}
+.delivery-section > .container {
+    margin: 0 350px;
+}
+.delivery-section__h3 {
+    font-family: 'GraphikTT',Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000000;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+}
+.delivery-section .section-h2 {
+    text-align: left;
+}
+.delivery-section__p {
+    font-family: 'GraphikTT',Arial,sans-serif;
+    font-size: 26px;
+    line-height: 1.45;
+    font-weight: 300;
+    color: #000000;
+}
+strong {
+    font-weight: 700;
+}
+.delivery-times {
+    display: flex;
+    flex-direction: column;
+}
+.delivery-times__item {
+    display: flex;
+}
+.delivery-times__date {
+    font-family: 'GraphikTT',Arial,sans-serif;
+    font-size: 20px;
+    line-height: 1.35;
+    font-weight: 600;
+    color: #000000;
+}
+.delivery-times__line-wrapper {
+    width: 16px;
+    position: relative;
+}
+.delivery-times__dot {
+    width: 12px;
+    height: 12px;
+    border: 2px solid #d4d4d4;
+    border-radius: 50%;
+}
+.delivery-times__line {
+    width: 2px;
+    position: absolute;
+    top: 0;
+    left: 7px;
+    right: 0;
+    bottom: 0;
+    background: #d4d4d4;
+}
+.delivery-times__wrapper {
+}
+.delivery-times__h2 {
+    font-family: 'GraphikTT',Arial,sans-serif;
+    font-size: 26px;
+    line-height: 1.23;
+    font-weight: 600;
+    color: #000000;
+}
+.delivery-times__p {
+    font-family: 'GraphikTT',Arial,sans-serif;
+    font-size: 16px;
+    line-height: 1.55;
+    font-weight: 300;
+    color: #000000;
+}
+
+/* Delivery section *Stop* */
