@@ -176,19 +176,24 @@
 
     border-radius: 50%;
     background: var(--aswearhelp-tilda-ws-1920-x-1080-default-coral-red, #FE3A4E);
+
+    cursor: pointer;
 }
 
 .carousel__prev-btn>img {
     transform: rotate(180deg);
 }
 
-.carousel-wrapper {
+.carousel__content {
     padding: 10px;
     margin: 0 auto;
     max-width: calc(70% - 90px);
 
     overflow-x: hidden;
     overflow-y: visible;
+}
+.carousel__content > * {
+    transition: transform ease-in-out .2s;
 }
 
 .assortment-list {
@@ -486,7 +491,7 @@
 .delivery-section > .container {
     margin: 0 350px;
 }
-.delivery-section__h3 {
+.section-h3 {
     font-family: 'GraphikTT',Arial,sans-serif;
     font-size: 14px;
     font-weight: 600;
@@ -507,6 +512,9 @@
 strong {
     font-weight: 700;
 }
+.delivery-times:not(:first-child) {
+    margin-top: 150px;
+}
 .delivery-times {
     display: flex;
     flex-direction: column;
@@ -515,13 +523,19 @@ strong {
     display: flex;
 }
 .delivery-times__date {
+    min-width: 100px;
+
     font-family: 'GraphikTT',Arial,sans-serif;
     font-size: 20px;
     line-height: 1.35;
     font-weight: 600;
+    text-align: right;
+    white-space: nowrap;
     color: #000000;
 }
 .delivery-times__line-wrapper {
+    margin: 0 20px;
+
     width: 16px;
     position: relative;
 }
@@ -530,6 +544,12 @@ strong {
     height: 12px;
     border: 2px solid #d4d4d4;
     border-radius: 50%;
+
+    z-index: 2;
+}
+.delivery-times__dot.red {
+    background-color: #ff0000;
+    border: 2px solid #ff0000;
 }
 .delivery-times__line {
     width: 2px;
@@ -539,8 +559,11 @@ strong {
     right: 0;
     bottom: 0;
     background: #d4d4d4;
+
+    z-index: -1;
 }
 .delivery-times__wrapper {
+    padding-bottom: 90px;
 }
 .delivery-times__h2 {
     font-family: 'GraphikTT',Arial,sans-serif;
@@ -548,6 +571,9 @@ strong {
     line-height: 1.23;
     font-weight: 600;
     color: #000000;
+}
+.delivery-times__h2 + .delivery-times__p {
+    margin-top: 30px;
 }
 .delivery-times__p {
     font-family: 'GraphikTT',Arial,sans-serif;
@@ -558,3 +584,163 @@ strong {
 }
 
 /* Delivery section *Stop* */
+
+/* Delivery cost *Start* */
+
+.delivery-cost {
+    padding: 150px 0;
+}
+.delivery-cost > .container {
+    margin: 0 350px;
+}
+.delivery-cost__header {
+    width: fit-content;
+    margin: 0 auto;
+}
+.delivery-cost .section-h3 + .section-h2 {
+    margin-top: 50px;
+}
+.delivery-cost .delivery-cards {
+    margin-top: 150px;
+}
+.delivery-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.delivery-cards__item {
+}
+.delivery-cards__preview {
+    width: 100%;
+
+    height: 100%;
+    max-height: 369px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+.delivery-cards__preview > img {
+    height: 100%;
+}
+.delivery-cards__h3 {
+    text-align: center;
+
+    font-size: 36px;
+    line-height: 1.23;
+    font-family: 'GraphikTT',Arial,sans-serif;
+    font-weight: 600;
+    color: #000000;
+}
+.delivery-cards__p {
+    text-align: center;
+
+    font-family: 'GraphikTT',Arial,sans-serif;
+    font-size: 16px;
+    line-height: 1.55;
+    font-weight: 300;
+    color: #000000;
+}
+
+/* Delivery cost *Stop* */
+
+/* Not original section *Start* */
+
+.not-original {
+    margin: 0 50px;
+    height: 700px;
+
+    background-image: url(../img/asos_DESIGN___Facebo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+
+    border-radius: 20px;
+}
+
+.not-original > .container {
+    margin: 0 auto;
+
+    max-width: 50%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.not-original .section-h2 {
+    color: #fff;
+}
+.not-original__p {
+    padding: 40px 0 54px;
+
+    font-family: 'GraphikTT',Arial,sans-serif;
+    font-size: 22px;
+    line-height: 1.55;
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
+}
+.not-original .primary-btn {
+    margin: 0 auto;
+
+    border-radius: 50px;
+}
+
+
+/* Not original section *Stop* */
+
+/* Paragraph Section *Start* */
+
+.paragraph-section {
+    padding: 150px 0;
+}
+.paragraph-section > .container {
+    margin: 0 350px;
+}
+.paragraph-section .section-h2 {
+    margin-top: 50px;
+    text-align: left;
+}
+.paragraph-section__p {
+    padding: 41px 0 0 0;
+
+    font-family: 'GraphikTT',Arial,sans-serif;
+    font-size: 26px;
+    line-height: 1.45;
+    font-weight: 300;
+    color: #000000;
+}
+.paragraph-section__p a {
+    color: #ff8562;
+    text-decoration: none;
+}
+
+/* Paragraph Section *Stop* */
+
+/* Guarantee section *Start* */
+
+.guarantee-section {
+    padding: 150px 0;
+}
+.guarantee-section > .container {
+    margin: 0 350px;
+}
+.section-h3 {
+}
+.guarantee-section .section-h2 {
+    text-align: left;
+}
+.guarantee-section__p {
+    padding-top: 21px;
+
+    font-family: 'GraphikTT',Arial,sans-serif;
+    font-size: 16px;
+    line-height: 1.55;
+    font-weight: 300;
+    color: #000000;
+}
+
+/* Guarantee section *Stop* */
