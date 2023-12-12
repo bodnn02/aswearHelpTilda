@@ -360,8 +360,12 @@
 
 /* Brands Section *Start* */
 
-.brands-section>.container {
-    margin: 0 40px;
+.brands-section {
+    padding: 50px 0;
+    background-color: #ededed;
+}
+.brands-section > .container {
+    margin: 0 350px;
 }
 
 .brands-list {
@@ -372,9 +376,9 @@
 }
 
 .brands-list__item {
-    flex: 0 0 140px;
+    padding: 20px;
+    flex: 0 0 13%;
 }
-
 .brands-list__item>img {
     width: 100%;
 }
@@ -744,3 +748,119 @@ strong {
 }
 
 /* Guarantee section *Stop* */
+
+/* Adv section *Start* */
+
+.adv-catalogue {
+    background-color: #ededed;
+}
+.adv-catalogue > .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+.adv-catalogue__preview > img {
+    width: 100%;
+}
+.adv-catalogue__wrapper {
+}
+.adv-catalogue__h2 {
+    color: #fe3850;
+    font-size: 35px;
+    font-family: 'GraphikTT',Arial,sans-serif;
+    line-height: 1.2;
+    font-weight: 600;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+
+    transform-origin: center center;
+    line-height: 42px;
+}
+.adv-catalogue__p {
+    color: #000000;
+    font-size: 22px;
+    font-family: 'TildaSans',Arial,sans-serif;
+    line-height: 1.55;
+    font-weight: 500;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+
+    transform-origin: center center;
+    line-height: 34px;
+}
+.adv-catalogue__h2 + .adv-catalogue__p { 
+    margin-top: 20px;
+}
+.adv-catalogue__p + .primary-btn {
+    margin-top: 50px;
+}
+
+/* Adv section *Stop* */
+
+/* Variants delivery *Start* */
+
+.variants-delivery {
+    padding: 100px 0;
+}
+.variants-delivery > .container {
+    margin: 0 30px;
+}
+.variants-delivery__wrapper {
+    margin-top: 50px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);    
+    gap: 50px;
+}
+.variants-delivery .section-h2 {
+    text-align: left;
+}
+.delivery-banner {
+    width: auto;
+    padding: 40px 70px;
+    background-color: #dfdfdf;
+    border-radius: 20px;
+}
+.delivery-banner__h2 {
+    color: #000000;
+    font-size: 35px;
+    font-family: 'GraphikTT',Arial,sans-serif;
+    line-height: 1.2;
+    font-weight: 600;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+
+    transform-origin: center center;
+    line-height: 42px;
+}
+.delivery-banner__p {
+    color: #000000;
+    font-size: 22px;
+    font-family: 'TildaSans',Arial,sans-serif;
+    line-height: 1.15;
+    font-weight: 500;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+
+    transform-origin: center center;
+    line-height: 25px;
+}
+.variants-delivery .primary-btn {
+    margin-top: 30px;
+    padding: 25px 0;
+
+    width: 100%;
+    border-radius: 25px;
+}
+.variants-delivery__video {
+    width: 100%;
+    max-width: 285px;
+    height: auto;
+    max-height: 518px;
+}
+
+/* Variants delivery *Stop* */
