@@ -5,7 +5,7 @@
 
     background-image: url(../img/main-section__bg.png);
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: right center;
 }
 
 .main-section>.container {
@@ -178,8 +178,14 @@
     background: var(--aswearhelp-tilda-ws-1920-x-1080-default-coral-red, #FE3A4E);
 
     cursor: pointer;
-}
+    user-select: none;
 
+    transition: opacity linear .2s;
+}
+.carousel__prev-btn:hover,
+.carousel__next-btn:hover {
+    opacity: .8;
+}
 .carousel__prev-btn>img {
     transform: rotate(180deg);
 }
@@ -392,14 +398,17 @@
 }
 
 .promocode-form {
+    position: relative;
+
     margin: 0 auto;
     padding: 57px 0 82px 0;
     width: fit-content;
 
-    background-image: url(../img/promocode-bg.jpeg);
+    background-image: -webkit-linear-gradient(top, rgba(7,11,49, 0.40), rgba(7,11,49, 0.40)), url(../img/promocode-bg.jpeg);
     background-position: center center;
-}
 
+    z-index: 2;
+}
 .promocode-form>.container {
     margin: 0 77px;
 }
@@ -864,3 +873,232 @@ strong {
 }
 
 /* Variants delivery *Stop* */
+
+
+
+/* Pros section *Start* */
+.pros-section {
+    padding: 100px 0;
+
+    background-color: #eaeaea;
+}
+.pros-section > .container {
+    margin: 0 30px;
+}
+.pros-list {
+    display: flex;
+    flex-direction: row;
+
+    overflow-x: auto;
+}
+.pros-list__item {
+    padding: 100px 20px;
+    height: fit-content;
+    min-width: 70vw;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+
+    border-radius: 10px;
+    background-image: linear-gradient(0turn,rgba(255,106,40,1) 0%,rgba(254,47,87,1) 100%);
+    border-color: transparent;
+    border-style: solid;
+}
+.pros-list__item:not(:last-child) {
+    margin-right: 50px;
+}
+.pros-list__label {
+    margin-bottom: 40px;
+
+    color: #ffffff;
+    font-size: 25px;
+    font-family: 'GraphikTT',Arial,sans-serif;
+    line-height: 1.55;
+    font-weight: 600;
+    border-radius: 10px;
+    background-color: #242424;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    transform-origin: center center;
+    text-align: center;
+}
+.pros-list__h4 {
+    margin-bottom: 10px;
+
+    color: #ffffff;
+    font-size: 24px;
+    font-family: 'TildaSans',Arial,sans-serif;
+    line-height: 1.55;
+    font-weight: 500;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    transform-origin: center center;
+    line-height: 23px;
+}
+.pros-list__h2 {
+    margin-bottom: 50px;
+
+    color: #052555;
+    font-size: 60px;
+    font-family: 'GraphikTT',Arial,sans-serif;
+    line-height: 1.2;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    transform-origin: center center;
+}
+.pros-list__h3 {
+    color: #ffffff;
+    font-size: 34px;
+    font-family: 'TildaSans',Arial,sans-serif;
+    line-height: 1.55;
+    font-weight: 500;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    transform-origin: center center;
+}
+.pros-list__preview {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 10px;
+    overflow: hidden;
+}
+.pros-list__preview > img {
+    width: auto;
+    height: 100%;
+}
+
+/* Pros section *Stop* */
+
+/* Bought section *Start* */
+
+.bought-section {
+    padding: 100px 0;
+}
+.bought-section > .container {
+    margin: 0 500px;
+}
+.bought-section__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.bought-section .section-h2 {
+    margin-bottom: 24px;
+    text-align: left;
+}
+.section-h3 {
+}
+.bought-section__p {
+    font-family: 'GraphikTT',Arial,sans-serif;
+    font-size: 20px;
+    line-height: 1.55;
+    font-weight: 300;
+    color: #000000;
+}
+
+/* Bought section *Stop* */
+
+/* telegram section *Start* */
+
+.telegram-section {
+    padding: 100px 0;
+}
+.telegram-section .primary-btn {
+    padding: 10px 20px;
+    margin: 0 auto;
+
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'GraphikTT',Arial,sans-serif;
+    line-height: 1.55;
+    font-weight: 600;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.telegram-section .primary-btn > img {
+    margin-right: 10px;
+    width: 32px;
+}
+
+/* telegram section *Stop* */
+
+/* Sale section *Start* */
+
+.sale-section {
+    background-image: url(../img/main-section__bg.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+.sale-section > .container {
+    margin: 0 30px;
+
+    max-width: 500px;
+}
+.sale-section .section-h2 {
+    display: block;
+
+    font-size: 75px;
+    text-align: left;
+    line-height: normal;
+
+    background-image: url(../img/sneakers.png);
+    background-size: auto 100%;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+}
+.sale-section__percent {
+    color: transparent;
+    background-image: linear-gradient(0turn,rgba(255,106,40,1) 0%,rgba(254,47,87,1) 100%);
+    -webkit-background-clip: text;
+    will-change: transform;
+    font-size: 100px;
+    font-family: 'GraphikTT',Arial,sans-serif;
+    line-height: 1.55;
+    font-weight: 600;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+}
+.sale-section__p {
+    margin-bottom: 30px;
+
+    font-size: 22px;
+    font-family: 'TildaSans',Arial,sans-serif;
+    line-height: 1.55;
+    font-weight: 500;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    transform-origin: center center;
+    line-height: 34px;
+}
+.primary-btn {
+}
+.sale-section__wrapper {
+    margin-top: 50px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+.sale-section .pros-item {
+    padding: 10px 20px;
+    min-width: auto;
+}
+.sale-section .pros-item:not(:last-child) {
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+
+/* Sale section *Stop* */

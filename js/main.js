@@ -48,7 +48,7 @@ $('.carousel__next-btn').on('click', function(e) {
     var pageWidth = containerWidth;
     
     // Проверяем, текущая страница находится на грани
-    if (current_index > -(length - 1) * pageWidth) {
+    if (current_index > - (length - 1)) {
         // Перемещаем на следующую страницу (вправо)
         var new_index = current_index - pageWidth;
         content.css('transform', 'translateX(' + new_index + 'px)');
