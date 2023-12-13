@@ -20,25 +20,25 @@
 </head>
 
 <body>
-    <section class="main-section">
+    <section class="main-section animate-section">
         <div class="container">
             <div class="main-section__wrapper">
                 <h1 class="text-h1">
-                    Сервис доставки
-                    брендовой обуви
+                    Сервис доставки <br>
+                    брендовой обуви <br>
                     и одежды
                 </h1>
                 <div class="main-section__discount">40-50%</div>
                 <p class="main-section__p">Выгодней чем в розничных магазинах</p>
-                <a class="primary-btn" href="">Перейти в каталог</a>
+                <a class="primary-btn" href="#application-section">Перейти в каталог</a>
                 <div class="grid-wrapper">
-                    <div class="main-section__pros">️✈️ Доставка СДЕК</div>
-                    <div class="main-section__pros">️⏱ 10-15 дней</div>
+                    <div class="pros-item">️✈️ Доставка СДЕК</div>
+                    <div class="pros-item">️⏱ 10-15 дней</div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="assortment-section">
+    <section class="assortment-section animate-section">
         <div class="container">
             <h2 class="section-h2">40’000 кроссовок и одежды в каталоге</h2>
             <p class="assortment-section__p">
@@ -105,19 +105,23 @@
             </div>
         </div>
     </section>
-    <section class="application-section">
+    <section class="application-section animate-section" id="application-section">
         <div class="container">
             <div class="application-section__description">
-                <h2 class="section-h2 application-section__h2">Оформите заказ на сайте BYYOU.RU</h2>
-                <div class="application-section__count">10 000 +</div>
-                <p class="application-section__p">Оригинальных брендовых товаров в каталоге</p>
-                <h2 class="section-h2">Или в приложении BYYOU</h2>
-                <div class="grid-wrapper">
-                    <div class="application-section__link-btn">
-                        <img src="img/app-store-download-btn.svg" alt="">
-                    </div>
-                    <div class="application-section__link-btn">
-                        <img src="img/play-market-download-btn.svg" alt="">
+                <div class="order-banner">
+                    <h2 class="section-h2 application-section__h2">Оформите заказ на сайте BYYOU.RU</h2>
+                    <div class="application-section__count">10 000 +</div>
+                    <p class="application-section__p">Оригинальных брендовых товаров в каталоге</p>
+                </div>
+                <div class="application-banner">
+                    <h2 class="section-h2">Или в приложении BYYOU</h2>
+                    <div class="grid-wrapper">
+                        <a class="application-section__link-btn" href="https://aswear.fittin.ru/console/deeplink/application">
+                            <img src="img/app-store-download-btn.svg" alt="">
+                        </a>
+                        <a class="application-section__link-btn" href="https://aswear.fittin.ru/console/deeplink/application">
+                            <img src="img/play-market-download-btn.svg" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -126,7 +130,7 @@
             </div>
         </div>
     </section>
-    <section class="adv-catalogue">
+    <section class="adv-catalogue animate-section">
         <div class="container">
             <div class="adv-catalogue__preview">
                 <img src="img/adv-section-preview.png" alt="">
@@ -135,11 +139,11 @@
                 <img src="img/adv-section-boots.png" alt="">
                 <h2 class="adv-catalogue__h2">Найдутся любые, даже <br> редкие модели</h2>
                 <p class="adv-catalogue__p">Умный поиск, система фильтров</p>
-                <a class="primary-btn" href="">В каталог товаров</a>
+                <a class="primary-btn" href="https://byyou.ru/men/catalogue/3729">В каталог товаров</a>
             </div>
         </div>
     </section>
-    <section class="brands-section">
+    <section class="brands-section animate-section">
         <div class="container">
             <div class="brands-list">
                 <div class="brands-list__item">
@@ -211,7 +215,7 @@
             </div>
         </div>
     </section>
-    <section class="variants-delivery">
+    <section class="variants-delivery animate-section">
         <div class="container">
             <h2 class="section-h2">Доставим за 2-3 недели</h2>
             <div class="variants-delivery__wrapper">
@@ -227,15 +231,65 @@
                             Курьером или самовывозом
                         </p>
                     </div>
-                    <a class="primary-btn" href="">Варианты и стоимость доставки</a>
+                    <a class="primary-btn" href="dost.html">Варианты и стоимость доставки</a>
                 </div>
-                <video class="variants-delivery__video" controls="" autoplay="true" playsinline="" loop="true" style="width: 100%; display: block;">
+                <video class="variants-delivery__video" volume="0" controls="" autoplay="true" playsinline="" loop="true" style="width: 100%; display: block;">
                     <source src="https://drive.google.com/uc?export=download&amp;id=11rL-h9LmSd87jxPzb24sGHQsqIcxIbSH" type="video/mp4">
                 </video>
             </div>
         </div>
     </section>
-    <section class="pros-section">
+    <section class="personal-section">
+        <div class="container">
+            <h2 class="section-h2">Отслеживание в личном кабинете</h2>
+            <div class="personal-steps">
+                <div class="personal-steps__item">
+                    <div class="personal-steps__preview">
+                        <div class="personal-steps__icon">
+                            <img src="img/personal-icon-1.png" alt="">
+                        </div>
+                        <div class="personal-steps__line"></div>
+                    </div>
+                    <div class="personal-steps__wrapper">
+                        <h3 class="personal-steps__h3">Заказ оплачен</h3>
+                        <p class="personal-steps__p">
+                            Ваш заказ ожидается на складе в Нашей промежуточной точке
+                        </p>
+                    </div>
+                </div>
+                <div class="personal-steps__item">
+                    <div class="personal-steps__preview">
+                        <div class="personal-steps__icon">
+                            <img src="img/personal-icon-2.png" alt="">
+                        </div>
+                        <div class="personal-steps__line"></div>
+                    </div>
+                    <div class="personal-steps__wrapper">
+                        <h3 class="personal-steps__h3">Получен на складе</h3>
+                        <p class="personal-steps__p">
+                            После получения заказа в промежуточной точке мы передаём его в СДЕК и отправляем по вашему адресу
+                        </p>
+                    </div>
+                </div>
+                <div class="personal-steps__item">
+                    <div class="personal-steps__preview">
+                        <div class="personal-steps__icon">
+                            <img src="img/personal-icon-3.png" alt="">
+                        </div>
+                        <div class="personal-steps__line"></div>
+                    </div>
+                    <div class="personal-steps__wrapper">
+                        <h3 class="personal-steps__h3">Прибыл в пункт выдачи</h3>
+                        <p class="personal-steps__p">
+                            Вам прийдёт уведомление на почту и по номеру телефона
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <a class="primary-btn" href="https://byyou.ru/delret/page/1">Перейти в личный кабинет</a>
+        </div>
+    </section>
+    <section class="pros-section animate-section scrollable-block">
         <div class="container">
             <div class="pros-list">
                 <div class="pros-list__item">
@@ -263,7 +317,7 @@
             </div>
         </div>
     </section>
-    <section class="bought-section">
+    <section class="bought-section animate-section">
         <div class="container">
             <div class="bought-section__wrapper">
                 <div>
@@ -276,13 +330,13 @@
             </div>
         </div>
     </section>
-    <section class="telegram-section">
+    <section class="telegram-section animate-section">
         <a class="primary-btn" href="">
             <img src="img/telegram.svg" alt="">
             <span>Канал с отзывами</span>
         </a>
     </section>
-    <section class="sale-section">
+    <section class="sale-section animate-section">
         <div class="container">
             <h2 class="section-h2">
                 SNEAKER <br>
@@ -298,7 +352,7 @@
             </div>
         </div>
     </section>
-    <section class="question-section">
+    <section class="question-section animate-section">
         <div class="container">
             <h2 class="section-h2">Ответы на вопросы</h2>
             <p class="question-section__p">Доставка, оплата, возврат и многое другое</p>
@@ -308,7 +362,7 @@
             </div>
         </div>
     </section>
-    <section class="promocode-section">
+    <section class="promocode-section animate-section">
         <div class="container">
             <form class="promocode-form" action="">
                 <div class="container">

@@ -57,3 +57,70 @@ $('.carousel__next-btn').on('click', function(e) {
         content.css('transform', 'translateX(0)');
     }
 });
+
+$("a[href^='#']").on("click", function(event) {
+    // Предотвращаем стандартное поведение ссылки (переход по якорю)
+    event.preventDefault();
+
+    // Получаем целевой блок, к которому нужно выполнить скролл
+    const targetBlock = $($(this).attr("href"));
+    
+    // Выполняем плавный скролл к целевому блоку
+    $("html, body").animate({
+    scrollTop: targetBlock.offset().top
+    }, 1000); // Время анимации в миллисекундах (здесь 1000 мс = 1 сек)
+});
+
+function scrollDisable() {
+    $("html,body").css("overflow","hidden");
+}
+function scrollEnable() {
+    $("html,body").css("overflow","auto");
+}
+
+$(document).ready(function() {
+    // При прокрутке страницы
+    $(window).scroll(function() {
+        // Получаем текущее положение скролла
+        var scroll = $(window).scrollTop();
+
+        // Для каждой секции
+        $('.animate-section').each(function() {
+            // Получаем положение секции относительно верхней границы документа
+            var offsetTop = $(this).offset().top;
+
+            // Если секция видима на экране
+            if (scroll > offsetTop - $(window).height() * 0.75) {
+                // Добавляем класс, который делает анимацию появления
+                $(this).addClass('visible');
+            }
+        });
+    });
+});
+
+$(document).ready(function() {
+    var isMouseDown = false;
+    var startX;
+    var scrollLeft;
+
+    $('.scrollable-block').on('mousedown', function(e) {
+        isMouseDown = true;
+        startX = e.pageX - $(this).offset().left;
+        scrollLeft = this.scrollLeft;
+    });
+
+    $('.scrollable-block').on('mouseleave', function() {
+        isMouseDown = false;
+    });
+
+    $('.scrollable-block').on('mouseup', function() {
+        isMouseDown = false;
+    });
+
+    $('.scrollable-block').on('mousemove', function(e) {
+        if (!isMouseDown) return;
+        var x = e.pageX - $(this).offset().left;
+        var walk = x - startX;
+        this.scrollLeft = scrollLeft - walk;
+    });
+});
