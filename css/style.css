@@ -1422,4 +1422,83 @@ strong {
     .pros-list__h3 {
         font-size: 20px;
     }
+    .delivery-banner {
+        padding: 20px 10px;
+        width: calc(100% - 20px);
+    }
+    .variants-delivery .primary-btn {
+        padding: 5px 0;
+        font-size: 14px;
+    }
+    .delivery-banner__h2 {
+        font-size: 30px;
+    }
+    .variants-delivery__wrapper {
+        grid-template-columns: 1fr;
+    }
+    .variants-delivery__video {
+        max-height: unset;
+        max-width: unset;
+    }
+    .delivery-banner > img {
+        width: 100%;
+    }
+    .brands-section > .container {
+        margin: 0 30px;
+    }
+    .brands-list__item {
+        padding: 2px;
+        flex: 0 0 45%;
+    }
+    .adv-catalogue__wrapper {
+        margin: 0 30px;
+    }
+    .adv-catalogue .primary-btn {
+        padding: 10px 0;
+        width: 100%;
+    }
+    .main-section .primary-btn {
+        padding: 10px 0;
+        width: 100%;
+    }
+    .pros-item {
+        padding: 9px 5px;
+        min-width: unset;
+    }
+    .application-section__count {
+        font-size: 70px;
+    }
+    .personal-section {
+        padding-top: 50px;
+        padding-bottom: 300px;
+        background-size: 100% auto;
+        background-position: center bottom;
+    }
+    .personal-steps__item {
+        align-items: center;
+    }
+    .personal-steps__item:last-child {
+        align-items: flex-start;
+    }
+    .personal-steps__item:last-child {
+        align-items: flex-end;
+    }
+    .pros-list__preview {
+        height: auto;
+    }
+    .pros-list__preview > img {
+        width: 100%;
+        height: auto;
+    }
+    .pros-list__item {
+        min-width: unset;
+        padding: 40px 20px;
+        width: calc(100% - 40px);
+    }
+    .pros-list__item:not(:last-child) {
+        margin-right: 0px;
+    }
+    .pros-section > .container {
+        margin: 0 30px;
+    }
 }
