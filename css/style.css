@@ -1402,4 +1402,24 @@ strong {
     .application-section>.container {
         grid-template-columns: 1fr;
     }
+    .bought-section__wrapper {
+        grid-template-columns: 1fr;
+    }
+    .bought-section > .container {
+        margin: 0 30px;
+    }
+    .pros-list {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .pros-list__item {
+        grid-template-columns: 1fr;
+    }
+    .pros-list__h2 {
+        font-size: 25px;
+    }
+    .pros-list__h3 {
+        font-size: 20px;
+    }
 }
